@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guillermo.obligatorio.Login"
+    android:background="@drawable/grafica">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <Button
+                android:id="@+id/crearcuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:text="Crear Cuenta"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="130dp"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <View
+                android:id="@+id/divisor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crearcuenta"
+
+                android:background="#0d3584" />
+
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divisor"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:focusableInTouchMode="false"
+
+                android:textAlignment="center"
+                android:ems="10"
+                android:hint="Ingrese el Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+
+            <EditText
+                android:id="@+id/contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textAlignment="center"
+                android:hint="Password"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:inputType="textPassword"
+
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+            <View
+                android:id="@+id/divisor2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/contraseña"
+
+                android:background="#C8C9CB" />
+
+
+            <Button
+                android:id="@+id/entrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/divisor2"
+                android:text="Entrar"
+                android:background="@android:color/darker_gray"
+                android:textColor="@android:color/holo_green_dark"
+                />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="350dp"
+              android:textAlignment="center"
+              android:text="Acceder como Invitado"
+              android:textColor="@android:color/holo_red_dark"
+              android:layout_marginLeft="85dp"
+              android:id="@+id/invitado"/>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
